@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizar servicios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-content">
+        
+        <div class="box-title">
+            <span class="saludo">¡Hola! atento saludo</span>
+            <span class="slogan">Somos Colectivos Cali, cotice con nosotros su servicio</span>
+            <img src="images/logoColectivosBox.png" alt="icono de colectivos cali">
+        </div>
+
+        <div class="input-box">
+            <input type="text" id = "inicio" class="inicio" placeholder="Escriba una dirección de inicio">
+            <input type="text" id = "destino" class="destino" placeholder="Escriba una dirección destino">
+        </div>
+
+        <div class="services">
+            <div id "pasajero" class="pasajero service-item">
+                <i class="fa-solid fa-users"></i>
+                <span>Pasajero</span> 
+                <label class="precioPasajero"> . . .</label>
+            </div>
+
+            <div id = "paquetes" class="paquetes service-item">
+                <i class="fa-solid fa-box-open"></i>
+                <span>Encomiendas</span>
+                <label class="precioPaquete"> . . . </label>
+            </div>
+        </div>
+
+        <div class="map-continer">
+            <div id="map" class="map">
+            </div>
+            <button id="btn" class="btn">CALCULAR TARIFA</button>
+        </div>
+
+        <div class="alert-box">
+            <span class="alert">Siguenos en redes sociales #ColectivosCali</span>
+
+        </div>
+        
+    </div>
+
+    <script src="https://kit.fontawesome.com/429172d1d3.js" crossorigin="anonymous"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBE8RxxJ10jyYCO1ijBn2xN1p19V-NROE8&libraries=places"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
