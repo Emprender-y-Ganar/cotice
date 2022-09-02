@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+
+.main.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-title {
+    padding: 10px;
+    background: rgb(29, 153, 255);
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    
+}
+
+.saludo {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.slogan {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.box-title img {
+    width: 80px;
+    grid-row: 1 / 3;
+    grid-column: 2 /3;
+    margin: auto auto;
+}
+
+
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    
+}
+
+.input-box input {
+    border-radius: 5px;
+    height: 25px;
+    
+}
+
+.services {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+
+.service-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    border-radius: 5px;  
+    height: 60px;
+    width: 180px;
+    color: #fff;
+    font-weight: 500;
+    background-color: rgb(29, 153, 255);
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
+}
+
+
+
+
+.services i {
+    color: white;
+    padding-right: 15px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin: auto auto;
+
+}
+
+.services label {
+    grid-column: 1 / 3;
+    grid-row: 2;
+    margin: auto auto;
+}
+
+/*ADAPTACION A MOVIL */
+
+@media only screen and (min-width: 376px) {
+
+    .map-continer {
+        background-color: blueviolet;
+        height: 380px;
+        position: relative;
+        display: grid;
+    }
+
+    .map {
+        height: 100%;
+    }
+
+    .btn {
+        position: absolute;
+        bottom: 20px;
+        height: 30px;
+        width: 180px;
+        background-color: rgb(29, 153, 255);
+        color: #fff;
+        border-radius: 20px;
+        text-shadow: 0.5px .5px .5px #000, 0 0 1em #000;
+        font-size: 18px;
+        justify-self: center;
+        
+    }
+
+}
