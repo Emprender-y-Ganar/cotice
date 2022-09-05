@@ -244,20 +244,20 @@ let calculadora = document.getElementById("btn")
           
           //ENVIO CARRO 
                 if ($pasajero <= 4961){   // Este if es para imprimir costo Express 
-                    precioPasajero.textContent = " = $ 4960" 
+                    precioPasajero.textContent = " = $ 4960 aprox." 
                     alert.style.backgroundColor = 'white';
                     alert.textContent = "El recorrido es de: " + dText + " y toma un tiempo de " + Math.round(((tiempo + 300)/60)) + " minutos." 
                 } else {
-                    precioPasajero.textContent = " = $ " + Math.round($pasajero) 
+                    precioPasajero.textContent = " = $ " + Math.round($pasajero + " aprox.") 
                     alert.style.backgroundColor = 'white';
-                    alert.textContent = "El recorrido es de: " + dText + " y toma un tiempo de " + Math.round(((tiempo + 300)/60)) + " minutos. "
+                    alert.textContent = "El recorrido es de: " + dText + " y toma un tiempo de " + Math.round(((tiempo + 300)/60)) + " minutos.  "
                 }
 
                 /* PAQUETE 
                  */
 
                 if ($paquete <= 7000){
-                    precioPaquete.textContent = " = $ 6000**"
+                    precioPaquete.textContent = " = $ 6000"
                     
                    
                 }else {
