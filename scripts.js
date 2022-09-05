@@ -237,9 +237,9 @@ let calculadora = document.getElementById("btn")
                 let precioMin = (tiempo + 600) * 2.16 // 120 por min (incluye salraio del vehiculo por 1,2 millones)
           
 
-                let $paquete = ((precioKM + precioMin) + 2500)*1.2  //Calculo t y d por un 60% ganancia
+                let $paquete = ((precioKM + precioMin) + 2500)*1.15  //Calculo t y d por un 60% ganancia
 
-                let $pasajero = ((precioKM + precioMin) + 2500)
+                let $pasajero = ((precioKM + precioMin) + 2000)
 
           
           //ENVIO CARRO 
@@ -257,7 +257,7 @@ let calculadora = document.getElementById("btn")
                  */
 
                 if ($paquete <= 7000){
-                    precioPaquete.textContent = " = $ 6000"
+                    precioPaquete.textContent = " = $ 7000"
                     
                    
                 }else {
