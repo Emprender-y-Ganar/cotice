@@ -100,7 +100,7 @@ body{
 
 /*ADAPTACION A MOVIL */
 
-@media only screen and (min-width: 359px) {
+@media only screen and (min-width: 300px) {
 
     .saludo {
         font-size: 26px;
