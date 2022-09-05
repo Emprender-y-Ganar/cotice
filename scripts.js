@@ -248,7 +248,7 @@ let calculadora = document.getElementById("btn")
                     alert.style.backgroundColor = 'white';
                     alert.textContent = "El recorrido es de: " + dText + " y toma un tiempo de " + Math.round(((tiempo + 300)/60)) + " minutos." 
                 } else {
-                    precioPasajero.textContent = " = $ " + Math.round($pasajero + " aprox.") 
+                    precioPasajero.textContent = " = $ " + Math.round($pasajero) + " aprox."; 
                     alert.style.backgroundColor = 'white';
                     alert.textContent = "El recorrido es de: " + dText + " y toma un tiempo de " + Math.round(((tiempo + 300)/60)) + " minutos.  "
                 }
