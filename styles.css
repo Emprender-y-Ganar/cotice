@@ -18,9 +18,8 @@ body{
 
 .box-title {
     padding: 10px;
-    background: rgb(29, 153, 255);
+    background: #304ffe;
     color: rgb(255, 255, 255);
-    font-weight: 500;
     display: grid;
     grid-template-columns: 3fr 1fr;
     
@@ -54,7 +53,6 @@ body{
 }
 
 .input-box input {
-    border-radius: 5px;
     height: 25px;
     
 }
@@ -69,13 +67,14 @@ body{
 .service-item {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;  
-    height: 60px;
-    width: 180px;
+    height: 50px;
+    width: 150px;
     color: #fff;
+    font-size: 15px;
     font-weight: 500;
-    background-color: rgb(29, 153, 255);
+    background-color: #304ffe;
     justify-content: center;
     align-items: center;
     margin: auto auto;
@@ -101,17 +100,59 @@ body{
 
 /*ADAPTACION A MOVIL */
 
-@media only screen and (min-width: 376px) {
+@media only screen and (min-width: 359px) {
+
+    .saludo {
+        font-size: 26px;
+        text-shadow: 0 0 4px rgb(105, 104, 104) ;
+    }
+
+    .slogan {
+        font-size: 15px;
+        font-weight: 500;
+        text-shadow: 0 0 4px rgb(105, 104, 104) ;
+    }
+
+    .box-title img {
+        width: 60px;
+    }
+
+    .input-box{
+        display: flex;
+        flex-direction: column;
+        background-color: #c7c7c7;
+        padding: 5px 10px;
+        gap: 5px;
+       
+    }
+
+    .lbl-inicio .lbl-destino {
+        display: flex;
+    }
+    
+    
+    .input-box input {
+    
+        height: 25px;
+        font-size: 15px;
+        background: none;
+        border: none;
+        width: 93%;
+        border-bottom: solid 2px #0026ca;
+        
+        
+    }
 
     .map-continer {
-        background-color: blueviolet;
-        height: 380px;
+        
+        height: 80vw;
         position: relative;
         display: grid;
     }
 
     .map {
-        height: 100%;
+        height: 80vw;
+        
     }
 
     .btn {
@@ -119,12 +160,17 @@ body{
         bottom: 20px;
         height: 30px;
         width: 180px;
-        background-color: rgb(29, 153, 255);
+        background-color: #0026ca;
         color: #fff;
         border-radius: 20px;
         text-shadow: 0.5px .5px .5px #000, 0 0 1em #000;
         font-size: 18px;
         justify-self: center;
+        
+    }
+
+    .services-item {
+        background-color: #304ffe;
         
     }
 
