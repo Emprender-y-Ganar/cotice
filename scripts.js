@@ -44,6 +44,8 @@ const map = new window.google.maps.Map ($map, {
         zoom: 15, 
         disableDefaultUI: true,
         styles: [
+    {
+        "stylers": [
             {
                 "saturation": -100
             }
@@ -101,6 +103,9 @@ const map = new window.google.maps.Map ($map, {
                 "visibility": "on"
             }
         ]
+    },
+    {}
+]
     })
 
     /*MARCADOR DRAW */
