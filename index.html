@@ -13,31 +13,39 @@
         <div class="box-title">
             <span class="saludo">¡Hola! atento saludo</span>
             <span class="slogan">Somos Colectivos Cali, cotice con nosotros su servicio</span>
-            <img src="logoColectivosBox.png" alt="icono de colectivos cali">
+            <img src="images/logoColectivosBox.png" alt="icono de colectivos cali">
         </div>
 
         <div class="input-box">
-            <input type="text" id = "inicio" class="inicio" placeholder="Escriba una dirección de inicio">
-            <input type="text" id = "destino" class="destino" placeholder="Escriba una dirección destino">
+            <div class="lbl-inicio">
+                <i class="fa-solid fa-location-dot"></i>
+                <input type="text" id = "inicio" class="inicio" placeholder="Escriba una dirección de inicio">
+            </div>
+            <div class="lbl-destino">
+                <i class="fa-solid fa-flag-checkered"></i>
+                <input type="text" id = "destino" class="destino" placeholder="Escriba una dirección destino">
+            </div>
         </div>
 
-          <div class="map-continer">
+        
+
+        <div class="map-continer">
             <div id="map" class="map">
             </div>
             <button id="btn" class="btn">CALCULAR TARIFA</button>
         </div>
-        
+
         <div class="services">
             <div id "pasajero" class="pasajero service-item">
                 <i class="fa-solid fa-users"></i>
                 <span>Pasajero</span> 
-                <label class="precioPasajero"> . . .</label>
+                <label class="precioPasajero"> </label>
             </div>
 
             <div id = "paquetes" class="paquetes service-item">
                 <i class="fa-solid fa-box-open"></i>
                 <span>Encomiendas</span>
-                <label class="precioPaquete"> . . . </label>
+                <label class="precioPaquete"> </label>
             </div>
         </div>
 
