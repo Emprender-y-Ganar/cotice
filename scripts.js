@@ -44,85 +44,97 @@ const map = new window.google.maps.Map ($map, {
         zoom: 15, 
         disableDefaultUI: true,
         styles: [
+    {
+        "featureType": "water",
+        "elementType": "geometry",
+        "stylers": [
             {
-                "featureType": "administrative",
-                "elementType": "labels.text.fill",
-                "stylers": [
-                    {
-                        "color": "#2d91fc"
-                    }
-                ]
+                "hue": "#71ABC3"
             },
             {
-                "featureType": "landscape",
-                "elementType": "all",
-                "stylers": [
-                    {
-                        "color": "#fff"
-                    }
-                ]
+                "saturation": -10
             },
             {
-                "featureType": "poi",
-                "elementType": "all",
-                "stylers": [
-                    {
-                        "visibility": "off"
-                    }
-                ]
+                "lightness": -21
             },
             {
-                "featureType": "road",
-                "elementType": "all",
-                "stylers": [
-                    {
-                        "saturation": -100
-                    },
-                    {
-                        "lightness": 45
-                    }
-                ]
-            },
-            {
-                "featureType": "road.highway",
-                "elementType": "all",
-                "stylers": [
-                    {
-                        "visibility": "simplified"
-                    }
-                ]
-            },
-            {
-                "featureType": "road.arterial",
-                "elementType": "labels.icon",
-                "stylers": [
-                    {
-                        "visibility": "off"
-                    }
-                ]
-            },
-            {
-                "featureType": "transit",
-                "elementType": "all",
-                "stylers": [
-                    {
-                        "visibility": "off"
-                    }
-                ]
-            },
-            {
-                "featureType": "water",
-                "elementType": "all",
-                "stylers": [
-                    {
-                        "color": "#c0e4f3"
-                    },
-                    {
-                        "visibility": "on"
-                    }
-                ]
+                "visibility": "simplified"
             }
         ]
+    },
+    {
+        "featureType": "landscape.natural",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "hue": "#7DC45C"
+            },
+            {
+                "saturation": 37
+            },
+            {
+                "lightness": -41
+            },
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape.man_made",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "hue": "#C3E0B0"
+            },
+            {
+                "saturation": 23
+            },
+            {
+                "lightness": -12
+            },
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "all",
+        "stylers": [
+            {
+                "hue": "#A19FA0"
+            },
+            {
+                "saturation": -98
+            },
+            {
+                "lightness": -20
+            },
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "hue": "#FFFFFF"
+            },
+            {
+                "saturation": -100
+            },
+            {
+                "lightness": 100
+            },
+            {
+                "visibility": "simplified"
+            }
+        ]
+    }
+]
     })
 
     /*MARCADOR DRAW */
