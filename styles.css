@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap');
 
 :root {
-    --primaryColor: #09A9F3
+    --primaryColor: #09A9F3;
+    --secondColor: #06283D;
 }
 
 *{
@@ -22,7 +23,7 @@ body{
 
 .box-title {
     padding: 10px;
-    background: var(--primaryColor);
+    background: var(--secondColor);
     color: rgb(255, 255, 255);
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -124,7 +125,7 @@ body{
     .input-box{
         display: flex;
         flex-direction: column;
-        background-color: #c7c7c7;
+        background-color: var(--primaryColor);
         padding: 5px 10px;
         gap: 5px;
        
@@ -176,7 +177,7 @@ body{
     }
 
     .services-item {
-        background-color: #304ffe;
+        background-color: var(--primaryColor);
         
     }
 
